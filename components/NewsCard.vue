@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     goToDetail() {
-      this.$router.push(`${this.cardInfo.path}`)
+      this.$router.push({ path: this.cardInfo.path })
     },
   },
 }
