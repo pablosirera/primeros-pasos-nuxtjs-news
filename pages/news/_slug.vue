@@ -12,5 +12,22 @@ export default {
     const doc = await $content(`/news/${params.slug}`).fetch()
     return { doc }
   },
+  head() {
+    return {
+      title: this.doc.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.doc.description,
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.doc.img,
+        },
+      ],
+    }
+  },
 }
 </script>

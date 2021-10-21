@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'primeros-pasos-nuxtjs-news',
+    title: 'Primeros Pasos Nuxtjs News',
     htmlAttrs: {
       lang: 'en',
     },
